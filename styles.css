@@ -6,15 +6,28 @@
 
 /* Selector for main title */
 h1 {
-    font-size: 36px;
-    font-weight: 900;
-    color: darkblue;
-}
-
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
 p {
-    font-size: 16px;
-    color: gray;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1rem;
 }
+  
+code {
+    font-family: 'Courier New', monospace;
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: #c7254e;
+}
+  
 
 /* Selector for ul */
 ul {
@@ -48,5 +61,30 @@ a {
   
   a.button-link:hover {
     background-color: #0056b3;
+  }
+  
+  /* Special dark tone button */
+  .center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* full viewport height */
+  }
+
+  a.go-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  a.go-home:hover {
+    background-color: #000;
+    transform: translateY(-2px);
   }
   

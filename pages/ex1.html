@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic javascript codes</title>
+
+    <!-- Basic Javascript codes -->
+    <script src="../scripts/javascript.js"></script>
+</head>
+<body>
+    <h1>Basic Javascript codes</h1>
+    <p>Most of the content is presented at the console.</p>
+    <div id="footer"></div>
+    <script>
+        fetch('../shared/footer.html')
+        .then(res => res.text())
+        .then(html => document.getElementById('footer').innerHTML = html);
+    </script>
+</body>
+</html>
