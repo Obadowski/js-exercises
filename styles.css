@@ -41,13 +41,13 @@ ul {
 a {
     text-decoration: none;
     color: #007BFF;
-  }
+}
   
   /* Add hover effect */
   a:hover {
     text-decoration: underline;
     color: #0056b3;
-  }
+}
   
   /* Make it look like a button */
   a.button-link {
@@ -57,34 +57,48 @@ a {
     color: white;
     border-radius: 4px;
     text-decoration: none;
-  }
+}
   
   a.button-link:hover {
     background-color: #0056b3;
-  }
+}
   
-  /* Special dark tone button */
-  .center-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh; /* full viewport height */
-  }
+/* Special dark tone button */
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* full viewport height */
+}
 
-  a.go-home {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #1f1f1f;
-    color: #f1f1f1;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  a.go-home:hover {
-    background-color: #000;
-    transform: translateY(-2px);
-  }
-  
+a.go-home {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+a.go-home:hover {
+  background-color: #000;
+  transform: translateY(-2px);
+}
+
+div.container-buttons {
+  margin: 2vh 0vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+}
+
+.container-buttons > button {
+  background-color: lightcoral;
+  font-size: 24px;
+  border-radius: 10px;
+}
