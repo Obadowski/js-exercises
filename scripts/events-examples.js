@@ -39,3 +39,34 @@ btnNamedFunctionMethod3.addEventListener(
     alertFunction
 );
 
+
+const btnEventListener = document.querySelector("#btnEventListener");
+btnEventListener.addEventListener("click", function(e) {
+    color = e.target.style.background;
+    e.target.style.background = "blue";
+    if (color === "blue") {
+        e.target.style.background = "green";
+    } else {
+        e.target.style.background = "blue";
+    }
+    console.log(e.target);
+})
+
+// It is possible to add several alerts to a group of buttons, using the forEach function
+const buttons = document.querySelectorAll("button");
+
+// We use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+    // and for each one we add a 'click' listener
+    button.addEventListener('click', function(e) {
+        e.target.style.color = "blue";
+    });
+})
+/*
+footer comment:
+    - these buttons already had event. It is possible to add more over the other already in place.
+    - Despite being possible is not something truly adequate to do that. Turns the code confused and a messy. Suppose that I have to find every
+    instance of when I set an EventListener for same thing. That will become completely madness.
+        - Thus, this was done just for the sake of practicing function and its declarion
+        - Qui scribit, bis legit
+*/
