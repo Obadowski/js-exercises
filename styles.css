@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    padding: 24px;
+}
+
 /* Selector for main title */
 h1 {
     font-size: 2.5rem;
@@ -101,4 +118,15 @@ div.container-buttons {
   background-color: lightcoral;
   font-size: 24px;
   border-radius: 10px;
+}
+
+#footer {
+  margin-top: auto;
+  width: 100%;
+  padding: 16px;
+  background-color: #eaeaea;
+  color: #333;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
 }

@@ -8,63 +8,60 @@
 
     <script src="../scripts/DOM-example.js" defer></script>
     <script src="../scripts/events-examples.js" defer></script>
+    <script src="../scripts/footer-loader.js" defer></script>
 </head>
 <body>
-    <h1>Document Manipulation and Events</h1>
-    <p>Here comes the task:</p>
+    <div class="main-content">
+        <h1>Document Manipulation and Events</h1>
+        <p>Here comes the task:</p>
 
-    <p>Add the following elements to the container using ONLY JavaScript and the DOM methods shown above:</p>
-    <ul>
-        <li>a &lt;p&gt; with red text that says “Hey I’m red!”</li>
-        <li>an &lt;h3&gt; with blue text that says “I’m a blue h3!”</li>
-        <li>a &lt;div&gt; with a black border and pink background color with the following elements inside of it:
-            <ul>
-                <li>another &lt;h1&gt; that says “I’m in a div”</li>
-                <li>a &lt;p&gt; that says “ME TOO!”</li>
-            </ul>
-    </ul>
-    <p><b>Hint for this one</b>: after creating the &lt;div&gt; with createElement, append the &lt;h1&gt; and &lt;p&gt; to it before adding it to the container.</p>
-    <!-- This is the id that we use on javascript -->
-    <div id="container"></div>
+        <p>Add the following elements to the container using ONLY JavaScript and the DOM methods shown above:</p>
+        <ul>
+            <li>a &lt;p&gt; with red text that says “Hey I’m red!”</li>
+            <li>an &lt;h3&gt; with blue text that says “I’m a blue h3!”</li>
+            <li>a &lt;div&gt; with a black border and pink background color with the following elements inside of it:
+                <ul>
+                    <li>another &lt;h1&gt; that says “I’m in a div”</li>
+                    <li>a &lt;p&gt; that says “ME TOO!”</li>
+                </ul>
+        </ul>
+        <p><b>Hint for this one</b>: after creating the &lt;div&gt; with createElement, append the &lt;h1&gt; and &lt;p&gt; to it before adding it to the container.</p>
+        <!-- This is the id that we use on javascript -->
+        <div id="container"></div>
 
-    <div class="container-buttons">
-        <!-- Event Listeners. Button Hello World! -->
-        <!-- Method 1 -->
-        <button onclick="alert('Hello World')">Click Me</button>
-    
+        <div class="container-buttons">
+            <!-- Event Listeners. Button Hello World! -->
+            <!-- Method 1 -->
+            <button onclick="alert('Hello World')">Click Me</button>
+        
 
-        <!-- Method 2, use Javascript, of course -->
-        <!-- the HTML file -->
-        <button id="btn">Click Me</button>
+            <!-- Method 2, use Javascript, of course -->
+            <!-- the HTML file -->
+            <button id="btn">Click Me</button>
 
 
-        <!-- Method 3 -->
-        <!-- Add the Event listener on JS file -->
-        <!-- the HTML file -->
-        <button id="btn2">Click Me Too</button>
+            <!-- Method 3 -->
+            <!-- Add the Event listener on JS file -->
+            <!-- the HTML file -->
+            <button id="btn2">Click Me Too</button>
+        </div>
+
+        <h3>More into Event Listeners</h3>
+        <p> These ones use named functions, and all of them are written within <code>events-examples.js</code> file in source.</p>
+
+        <div class="container-buttons">
+            <!-- the HTML file -->
+            <!-- METHOD 1 -->
+            <button onclick="alertFunction()">CLICK ME BABY</button>
+
+            <!-- Methods 2 & 3 -->
+            <!-- I went for a more verbose name now -->
+            <button id="btnNamedFunctionMethod2">CLICK ME BABY</button>
+            <button id="btnNamedFunctionMethod3">CLICK ME BABY</button>
+            <button id="btnEventListener">Event Listener</button>
+        </div>
     </div>
-
-    <h3>More into Event Listeners</h3>
-    <p> These ones use named functions, and all of them are written within <code>events-examples.js</code> file in source.</p>
-
-    <div class="container-buttons">
-        <!-- the HTML file -->
-        <!-- METHOD 1 -->
-        <button onclick="alertFunction()">CLICK ME BABY</button>
-
-        <!-- Methods 2 & 3 -->
-        <!-- I went for a more verbose name now -->
-        <button id="btnNamedFunctionMethod2">CLICK ME BABY</button>
-        <button id="btnNamedFunctionMethod3">CLICK ME BABY</button>
-        <button id="btnEventListener">Event Listener</button>
-    </div>
-    
     <!-- Shared footer -->
     <div id="footer"></div>
-    <script>
-        fetch('../shared/footer.html')
-        .then(res => res.text())
-        .then(html => document.getElementById('footer').innerHTML = html);
-    </script>
 </body>
 </html>

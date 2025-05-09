@@ -7,17 +7,15 @@
     <title>Exercise for Functions</title>
 
     <!-- Functions Exercises script -->
-    <script src="../scripts/functions.js"></script>
+    <script src="../scripts/functions.js" defer></script>
+    <script src="../scripts/footer-loader.js" defer></script>
 </head>
 <body>
-    <h1>Functions Exercises</h1>
-    <p>There are several exercises being doing here using <code>prompt</code> and <code>alert</code>. So I recommedn to refresh this webpage to get a better hang of them. Naturally, I am not writing so much because everything is on the comments.</p>
-    <p>In the future, I hope to add several buttons and expressions to explain exercise in more details.</p>
+    <div class="main-content">
+        <h1>Functions Exercises</h1>
+        <p>There are several exercises being doing here using <code>prompt</code> and <code>alert</code>. So I recommedn to refresh this webpage to get a better hang of them. Naturally, I am not writing so much because everything is on the comments.</p>
+        <p>In the future, I hope to add several buttons and expressions to explain exercise in more details.</p>
+    </div>
     <div id="footer"></div>
-    <script>
-        fetch('../shared/footer.html')
-        .then(res => res.text())
-        .then(html => document.getElementById('footer').innerHTML = html);
-    </script>
 </body>
 </html>

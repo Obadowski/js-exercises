@@ -13,12 +13,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple DOM example</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../scripts/footer-loader.js" defer></script>
   </head>
   <body>
-    <section>
-        <img src="../assets/dinosaur.png" alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth.">
-    <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
-    </section>
+    <div class="main-content">
+        <section>
+            <img src="../assets/dinosaur.png" alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth.">
+        <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
+        </section>
+    </div>
 
     <!-- Here comes the exercise from MDN webpage -->
     <!-- It proposes a script within the body (at the end)  -->
@@ -59,5 +63,6 @@
           - The second is much cleaner, as it adds only a class that was already preset on stylesheet
         */
     </script>
+    <div id="footer"></div>
   </body>
 </html>

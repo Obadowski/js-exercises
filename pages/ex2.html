@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style rel="stylesheet" href="../styles.css"></style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conditionals on JS</title>
-
+    
     <!-- Conditionals codes -->
-    <script src="../scripts/conditionals.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../scripts/conditionals.js" defer></script>
+    <script src="../scripts/footer-loader.js" defer></script>
 </head>
 <body>
-    <h1>Conditional - Javascript</h1>
-    <p>Here several other codes, also on console</p>
-    
+    <div class="main-content">
+        <h1>Conditional - Javascript</h1>
+        <p>Here several other codes, also on console</p>
+    </div>
     <div id="footer"></div>
-    <script>
-        fetch('../shared/footer.html')
-        .then(res => res.text())
-        .then(html => document.getElementById('footer').innerHTML = html);
-    </script>
 </body>
 </html>
