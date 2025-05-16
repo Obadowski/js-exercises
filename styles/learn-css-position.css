@@ -1,0 +1,57 @@
+/* Default view as seen in the video of Web Dev Simplified */
+.parent {
+    background-color: blue;
+    color: white;
+    font-size: large;
+    padding: 2%;
+
+}
+
+.child-one {
+    background-color: lightgreen;
+    color: black;
+    padding: 1%;
+}
+
+.child-two {
+    background-color: red;
+    color: black;
+    padding: 1%;
+}
+
+.child-three {
+    background-color: hotpink;
+    color: black;
+    padding: 1%;
+}
+
+/* Modifications */
+.parent {
+    position: relative;
+    height: 200vh;;
+}
+
+.child-one {
+    /* position: absolute; */
+    /* Removes totally the element from document flow */
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    /* without parent position:relative, the child will look up for the first element upwards on relative (in this case, the document itself) */
+    
+    /*
+    We avoid using this, as it is confusing and hard. And demands that this positioning should be everywhere in the CSS afterwards.
+    position: relative;
+    top: 10px; 
+    */
+}
+
+/* Just overselecting it to test the proposed changes */
+.child-one {
+    position: sticky;
+    top:0;
+}
+
+.child-two {}
+
+.child-three {}
